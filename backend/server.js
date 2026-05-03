@@ -1,18 +1,21 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import contactRoutes from "./routes/contactRoutes.js";
+import contentRoutes from "./routes/contentRoutes.js";
+
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post("/api/contact", (req, res) => {
-  const { name, email, message } = req.body;
-  // TODO: Envoyer l'email ou stocker le message
-  console.log("Nouveau message:", { name, email, message });
-  res.status(200).json({ success: true });
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok" });
 });
+
+app.use("/api", contentRoutes);
+app.use("/api/contact", contactRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
