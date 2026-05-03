@@ -1,0 +1,48 @@
+import { FaLaptopCode, FaNetworkWired, FaShieldAlt, FaChalkboardTeacher } from "react-icons/fa";
+
+export const services = [
+  {
+    icon: <FaLaptopCode />,
+    title: "Développement & Solutions Digitales",
+    description: "Applications web, mobiles et plateformes sur-mesure pour booster votre activité.",
+    badges: ["Web", "Mobile", "Plateformes", "Maintenance"],
+    iconColor: "text-accent",
+    iconBg: "bg-accent/20",
+    badgeClass: "border-accent/40 text-accent",
+    hoverBorder: "hover:border-accent/60",
+    hoverShadow: "hover:shadow-accent/15",
+  },
+  {
+    icon: <FaNetworkWired />,
+    title: "Infrastructure, Réseaux & Cloud",
+    description: "Réseaux, serveurs, cloud, DevOps et supervision pour une IT performante et sécurisée.",
+    badges: ["Réseaux", "Cloud", "DevOps", "Supervision"],
+    iconColor: "text-blue-400",
+    iconBg: "bg-blue-400/20",
+    badgeClass: "border-blue-400/40 text-blue-400",
+    hoverBorder: "hover:border-blue-400/60",
+    hoverShadow: "hover:shadow-blue-400/15",
+  },
+  {
+    icon: <FaShieldAlt />,
+    title: "Sécurité, Contrôle & Surveillance",
+    description: "Cybersécurité, audit, contrôle d'accès et surveillance pour protéger vos données.",
+    badges: ["Cybersécurité", "Audit", "Contrôle", "Caméras"],
+    iconColor: "text-green-400",
+    iconBg: "bg-green-400/20",
+    badgeClass: "border-green-400/40 text-green-400",
+    hoverBorder: "hover:border-green-400/60",
+    hoverShadow: "hover:shadow-green-400/15",
+  },
+  {
+    icon: <FaChalkboardTeacher />,
+    title: "Formation & Conseil IT",
+    description: "Formations et accompagnement pour accélérer votre transformation digitale.",
+    badges: ["Formation", "Conseil", "Transformation"],
+    iconColor: "text-purple-400",
+    iconBg: "bg-purple-400/20",
+    badgeClass: "border-purple-400/40 text-purple-400",
+    hoverBorder: "hover:border-purple-400/60",
+    hoverShadow: "hover:shadow-purple-400/15",
+  },
+];
